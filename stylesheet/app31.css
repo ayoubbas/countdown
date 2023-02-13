@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Tourney", cursive;
+  box-sizing: border-box;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.parent-psiconet {
+    position: relative;
+    width: 150px;
+    height: 120px;
+    overflow: hidden;
+}
+.psiconit {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span {
+    transform-origin: bottom center;
+    transition: all .5s;
+    height: 100px;
+    transform: rotate(120deg);
+    position: absolute;
+    top: 50px;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.rot1 {
+    animation: rot1 1.5s;
+}
+.rot2 {
+    animation: rot2 1.5s;
+}
+.two{
+    animation-delay: 1s;
+}
+.three{
+    animation-delay: 2s;
+}
+.four{
+    animation-delay: 3s;
+}
+@keyframes rot1 {
+    0%{
+        transform: rotate(120deg);
+    }
+    30%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-100deg);
+    }
+}
+@keyframes rot2 {
+    0%{
+        transform: rotate(120deg);
+    }
+    30%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        transform: rotate(-100deg);
+    }
+}
+
+button {
+width: 200px;
+padding: 10px 20px;
+background: none;
+border: none;
+background-color: black;
+color: white;
+font-weight: bold;
+border-radius: 10px;
+text-align: center;
+margin-top: 50px;
+cursor: pointer;
+}
